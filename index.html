@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ën">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a survey form. I will use it to steal all your information. </p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Please enter your name: <input type="text" id="name" placeholder="John" required/></label>
+                <label id="email-label" for="email">Please enter your email: <input type="email" id="email" placeholder="Doe" required/></label>
+                <label id="number-label" for="number">Please enter your age: <input type="number" id="number" min="6" max="99" placeholder="99" required/></label>
+            </fieldset>
+            <fieldset>
+                <label id="dropdown-label" for="dropdown">What is your current role?
+                    <select id="dropdown" name="dropdown">
+                        <option  value="">(select one)</option>
+                        <option value="1">Chief Executive Officer</option>
+                        <option  value="2">Chief Financial Officer</option>
+                        <option  value="3">Chief Technical Officer</option>
+                        <option  value="4">Chief Information Officer</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Are you willing to relocate? </label>
+                <label for="local"><input value="1" id="local" type="radio" name="relocate" class="inline" checked /> Yes, Locally</label>
+                <label for="international"><input value="2" id="international" type="radio" name="relocate" class="inline" /> Yes, International</label>
+                <label for="no"><input value="3" id="no" type="radio" name="relocate" class="inline" /> No</label>
+            </fieldset>
+            <fieldset>
+                <label>Which of the following operating systems do you use?</label>
+                <label for="Windows"><input value="1" id="Windows" type="checkbox" name="device" checked class="inline"/>Windows</label>
+                <label for="LinuxOS"><input value="2" id="LinuxOS" type="checkbox" name="device" class="inline"/>LinuxOS</label>
+                <label for="MacOS"><input value="3" id="MacOS" type="checkbox" name="device" class="inline"/>MacOS</label>
+                <label for="Qubes"><input value="4" id="Qubes" type="checkbox" name="device" class="inline"/>Qubes OS</label>
+                <label for="ChromeOS"><input value="5" id="ChromeOS" type="checkbox" name="device" class="inline"/>ChromeOS</label>
+            </fieldset>
+            <fieldset>
+                <label for="comments">Any suggestions or comments?
+                    <textarea id="comments" rows="4" cols="20" placeholder="Enter comment here......"></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
